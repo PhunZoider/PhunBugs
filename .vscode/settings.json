@@ -1,0 +1,59 @@
+{
+    "emeraldwalk.runonsave": {
+        "autoClearConsole": true,
+        "commands": [
+            {
+                "match": ".*",
+                "cmd": "rmdir /S /Q ${env.USERPROFILE}\\Zomboid\\mods\\PhunBugs 2>nul"
+            },
+            {
+                "match": ".*",
+                "cmd": "xcopy ${workspaceFolder}\\Contents\\mods ${env.USERPROFILE}\\Zomboid\\mods /Y /I /E /F /EXCLUDE:xclude"
+            },
+            {
+                "match": ".*",
+                "cmd": "xcopy ${workspaceFolder}\\Contents\\mods\\PhunBugs\\media ${env.USERPROFILE}\\Zomboid\\mods\\PhunBugs\\42\\media /Y /I /E /F"
+            },
+            {
+                "match": ".*",
+                "cmd": "del ${env.USERPROFILE}\\Zomboid\\mods\\PhunBugs\\42\\media\\lua\\client\\PhunBugs\\ui\\admin.lua"
+            },                       
+            {
+                "match": ".*",
+                "cmd": "del ${env.USERPROFILE}\\Zomboid\\mods\\PhunBugs\\42\\media\\lua\\shared\\PhunBugs\\data.lua"
+            },            
+            {
+                "match": ".*",
+                "cmd": "copy ${workspaceFolder}\\Contents\\mods\\PhunBugs\\poster.png ${env.USERPROFILE}\\Zomboid\\mods\\PhunBugs\\42\\poster.png /Y"
+            },            
+            {
+                "match": ".*",
+                "cmd": "copy ${workspaceFolder}\\Contents\\mods\\PhunBugs\\icon.png ${env.USERPROFILE}\\Zomboid\\mods\\PhunBugs\\42\\icon.png /Y"
+            },
+            {
+                "match": ".*",
+                "cmd": "rmdir /S /Q ${env.USERPROFILE}\\Zomboid\\Workshop\\PhunBugs 2>nul"
+            },
+            {
+                "match": ".*",
+                "cmd": "xcopy ${workspaceFolder} ${env.USERPROFILE}\\Zomboid\\Workshop\\PhunBugs /Y /I /E /F /EXCLUDE:xclude"
+            },
+            {
+                "match": ".*",
+                "cmd": "xcopy ${env.USERPROFILE}\\Zomboid\\mods\\PhunBugs ${env.USERPROFILE}\\Zomboid\\Workshop\\PhunBugs\\Contents\\mods\\PhunBugs /Y /I /E /F"
+            },
+            {
+                "match": ".*",
+                "cmd": "rmdir /S /Q ${env.USERPROFILE}\\pz41\\mods\\PhunBugs 2>nul"
+            },
+            {
+                "match": ".*",
+                "cmd": "xcopy ${env.USERPROFILE}\\Zomboid\\mods\\PhunBugs ${env.USERPROFILE}\\pz41\\mods\\PhunBugs /Y /I /E /F /EXCLUDE:xclude"
+            },
+                                              
+        ]
+    },
+    "editor.formatOnSave": true,
+    "github.gitAuthentication": true,
+    "github.gitProtocol": "ssh"
+}

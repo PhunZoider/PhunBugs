@@ -1,0 +1,32 @@
+version=1
+title=PhunBugs
+description=Bug Reporting mod used to cleanly demonstrate bugs in current build
+description=
+description=[h2]Skeletons cause a CTD[/h2]
+description=
+description=Happens in B42.13.1 and B42.13.2. It wasn't happening in B41
+description=
+description=To reproduce:
+description=[list]
+description=[*]play in either SP/MP
+description=[*]Start up a new game
+description=[*]All zeds will be set to zed:setSkeleton(true)
+description=[*]Aim a gun at one
+description=[*]Crash to desktop
+description=[/list]
+description=[h2]saveGame() on server prevents changing settings in future[/h2]
+description=
+description=Happens in B42.13.1 and B42.13.2
+description=
+description=To reproduce:
+description=[list]
+description=[*]Ensure the servers save folder does not contain map_sand.bin
+description=[*]Start a server with this mod active
+description=[*]Every 10 mins in game, the server will call saveGame()
+description=[*]You will then find a map_sand.bin in your folder
+description=[*]This file can prevent your SandboxVars.lua file from being read
+description=[/list]
+tags=Build 42
+visibility=unlisted
+
+
