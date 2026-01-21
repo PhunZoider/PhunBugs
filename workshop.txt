@@ -1,4 +1,5 @@
 version=1
+id=3651321449
 title=PhunBugs
 description=Bug Reporting mod used to cleanly demonstrate bugs in current build
 description=
@@ -28,5 +29,3 @@ description=[*]This file can prevent your SandboxVars.lua file from being read
 description=[/list]
 tags=Build 42
 visibility=unlisted
-
-

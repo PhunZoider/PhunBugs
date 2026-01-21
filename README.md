@@ -2,6 +2,10 @@
 
 A Project Zomboid mod to demonstrate current bugs
 
+Steam: https://steamcommunity.com/sharedfiles/filedetails/?id=3651321449
+workshopId:3651321449
+modId: phunbugs
+
 ## Skeletons cause a CTD
 
 Happens in B42.13.1 and B42.13.2. It wasn't happening in B41
