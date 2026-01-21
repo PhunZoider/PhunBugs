@@ -2,9 +2,11 @@
 
 A Project Zomboid mod to demonstrate current bugs
 
-Steam: https://steamcommunity.com/sharedfiles/filedetails/?id=3651321449
-workshopId:3651321449
-modId: phunbugs
+## details
+
+- Steam: https://steamcommunity.com/sharedfiles/filedetails/?id=3651321449
+- workshopId:3651321449
+- modId: phunbugs
 
 ## Skeletons cause a CTD
 
